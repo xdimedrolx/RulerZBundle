@@ -21,6 +21,7 @@ class CacheClearCommand extends Command
     public function __construct(ContainerInterface $container)
     {
         $this->container = $container;
+        parent::__construct();
     }
 
     /**
