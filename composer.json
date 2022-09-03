@@ -19,11 +19,11 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/FrontasticGmbH/rulerz.git"
+            "url": "https://github.com/xdimedrolx/rulerz"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/FrontasticGmbH/rulerz-bridge.git"
+            "url": "https://github.com/xdimedrolx/rulerz-bridge"
         }
     ],
     "autoload": {
@@ -36,8 +36,8 @@
     },
     "require": {
         "php": ">=7.1",
-        "kphoen/rulerz": "dev-feat\/symfony-5-compat|^1.0",
-        "kphoen/rulerz-bridge": "dev-feat\/symfony-5-compat|^1.0",
+        "kphoen/rulerz": ">=0.23",
+        "kphoen/rulerz-bridge": ">=1.1.2",
         "symfony/framework-bundle": "^3.0|^4.0|^5.0"
     },
     "require-dev": {
