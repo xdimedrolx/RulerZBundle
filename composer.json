@@ -4,30 +4,47 @@
     "license": "MIT",
     "homepage": "https://github.com/K-Phoen/RulerZBundle",
     "description": "Symfony2 Bundle for RulerZ",
-    "keywords": ["specification", "doctrine", "ruler", "rulerz"],
+    "keywords": [
+        "specification",
+        "doctrine",
+        "ruler",
+        "rulerz"
+    ],
     "authors": [
         {
             "name": "Kévin Gomez",
             "email": "contact@kevingomez.fr"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/FrontasticGmbH/rulerz.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/FrontasticGmbH/rulerz-bridge.git"
+        }
+    ],
     "autoload": {
-        "psr-4": { "KPhoen\\RulerZBundle\\": "" },
+        "psr-4": {
+            "KPhoen\\RulerZBundle\\": ""
+        },
         "exclude-from-classmap": [
             "/Tests/"
         ]
     },
     "require": {
         "php": ">=7.1",
-        "kphoen/rulerz": "^1.0",
-        "kphoen/rulerz-bridge": "^1.0",
-        "symfony/framework-bundle": "^3.0|^4.0"
+        "kphoen/rulerz": "dev-feat\/symfony-5-compat|^1.0",
+        "kphoen/rulerz-bridge": "dev-feat\/symfony-5-compat|^1.0",
+        "symfony/framework-bundle": "^3.0|^4.0|^5.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.1",
+        "phpunit/phpunit": "^7.1|^8.0",
         "symfony/phpunit-bridge": "^3.0|^4.0",
-        "mikey179/vfsStream": "^1.6",
-        "matthiasnoback/symfony-dependency-injection-test": "^3.0",
+        "mikey179/vfsstream": "^1.6",
+        "matthiasnoback/symfony-dependency-injection-test": "^4.0",
         "liip/rmt": "^1.2"
     }
 }
