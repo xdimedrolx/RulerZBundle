@@ -1,5 +1,5 @@
 {
-    "name": "kphoen/rulerz-bundle",
+    "name": "xdimedrolx/rulerz-bundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "homepage": "https://github.com/K-Phoen/RulerZBundle",
@@ -16,16 +16,6 @@
             "email": "contact@kevingomez.fr"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/xdimedrolx/rulerz"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/xdimedrolx/rulerz-bridge"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "KPhoen\\RulerZBundle\\": ""
@@ -34,10 +24,13 @@
             "/Tests/"
         ]
     },
+    "replace": {
+        "kphoen/rulerz-bundle": ">=0.10"
+    },
     "require": {
         "php": ">=7.1",
-        "kphoen/rulerz": ">=0.23",
-        "kphoen/rulerz-bridge": ">=1.1.2",
+        "xdimedrolx/rulerz": ">=0.23",
+        "xdimedrolx/rulerz-bridge": ">=1.1.2",
         "symfony/framework-bundle": "^3.0|^4.0|^5.0"
     },
     "require-dev": {
