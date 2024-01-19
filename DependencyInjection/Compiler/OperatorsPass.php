@@ -10,7 +10,7 @@ use Symfony\Component\DependencyInjection\Reference;
 
 class OperatorsPass implements CompilerPassInterface
 {
-    public function process(ContainerBuilder $container)
+    public function process(ContainerBuilder $container): void
     {
         foreach ($container->findTaggedServiceIds('rulerz.operator') as $id => $attributesSet) {
             foreach ($attributesSet as $attributes) {

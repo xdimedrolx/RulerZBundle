@@ -21,7 +21,7 @@ class KPhoenRulerZExtension extends Extension
         'elasticsearch' => false,
     ];
 
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container): void
     {
         $config = $this->processConfiguration($this->getConfiguration($configs, $container), $configs);
 
